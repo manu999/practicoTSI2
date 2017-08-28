@@ -42,6 +42,13 @@
 		<version>2.1</version>
 	</dependency>
 	
+	<!-- https://mvnrepository.com/artifact/javax.persistence/persistence-api -->
+	<dependency>
+	    <groupId>javax.persistence</groupId>
+	    <artifactId>persistence-api</artifactId>
+	    <version>1.0.2</version>
+	</dependency>
+
 	<!-- Postgres -->
 	<dependency>
 		<groupId>postgresql</groupId>

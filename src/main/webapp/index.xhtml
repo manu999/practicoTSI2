@@ -5,13 +5,24 @@
       xmlns:f="http://java.sun.com/jsf/core"
       xmlns:h="http://java.sun.com/jsf/html">
 	<h:head>
-		<title>Practico TSI2</title>
+		<title>Login</title>
 	</h:head>
 	<h:body>
-		<h2>Practico</h2>
 		<h:form>
-	   	   <h:inputText value="#{loginBean.login}"></h:inputText>
-	   	   <h:commandButton value="Login" action="welcome"></h:commandButton>
-	   	</h:form>
+			<h3>Login</h3>
+			<h:outputText value="Username" />
+			<h:inputText id="username" value="#{loginBean.login}"></h:inputText>
+			<h:message for="username"></h:message>
+			<br></br><br></br>
+			
+			<h:outputText value="Password" />
+			<h:inputSecret id="password" value="#{loginBean.pass}"></h:inputSecret>
+			<h:message for="password"></h:message>
+			<br></br><br></br>
+			
+			<h:commandButton action="#{login.validateUsernamePassword}"
+				value="Login"></h:commandButton>
+		</h:form>
 	</h:body>
+	</html>
 </html>

@@ -7,7 +7,7 @@
           <properties>
                <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
                <property name="javax.persistence.jdbc.url"
-                    value="jdbc:postgresql://172.31.31.161:5432/Users;create=true" />
+                    value="jdbc:postgresql://172.31.24.205:5432/Users;create=true" />
                <property name="javax.persistence.jdbc.user" value="user6V6" />
                <property name="javax.persistence.jdbc.password" value="udwqxFEjlIEIoJ7k" />
 

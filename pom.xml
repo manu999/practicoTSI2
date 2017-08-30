@@ -7,6 +7,27 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>practico Maven Webapp</name>
   <url>http://maven.apache.org</url>
+  
+  <profiles>
+	<profile>
+		<id>practico</id>
+		<activation>
+			<activeByDefault>true</activeByDefault>
+			<property>
+				<name>env</name>
+				<value>practico-dev</value>
+			</property>
+		</activation>
+		<properties>
+			<!-- ${deployDir} se debe definir en la configuracion de build como un parametro en la pestaña MAIN donde tiene el path al jboss, por ejemplo /opt/jboss4.0.4 -->
+				<jboss.install.dir>${deployDir}</jboss.install.dir>
+				<web.target.dir>${basedir}/web/target</web.target.dir>
+				<ear.target.dir>${basedir}/target</ear.target.dir>
+				<web.application.name>practicoTsi2</web.application.name>
+		</properties>
+	</profile>
+  </profiles>
+  
   <dependencies>
     <!-- JUnit -->
     <dependency>

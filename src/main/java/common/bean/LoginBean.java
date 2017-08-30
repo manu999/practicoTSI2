@@ -41,8 +41,8 @@ public class LoginBean implements Serializable{
 	
 	//validate login
 	public String validateUsernamePassword() {
-		//boolean valid = "asd".equals(login) && "asd".equals(pass);
-		boolean valid = LoginDAO.validate(login, pass);
+		boolean valid = "asd".equals(login) && "asd".equals(pass);
+//		boolean valid = LoginDAO.validate(login, pass);
 		if (valid) {
 			HttpSession session = SessionUtils.getSession();
 			session.setAttribute("username", login);

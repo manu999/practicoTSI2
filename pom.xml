@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>tsi2</groupId>
   <artifactId>practico</artifactId>
-  <packaging>pom</packaging>
+  <packaging>war</packaging>
   <version>0.0.1</version>
   <name>practico</name>
   <description></description>

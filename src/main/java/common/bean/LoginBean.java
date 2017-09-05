@@ -8,8 +8,6 @@ import javax.faces.bean.SessionScoped;
 import javax.faces.context.FacesContext;
 import javax.servlet.http.HttpSession;
 
-import common.dao.LoginDAO;
-
 @ManagedBean
 @SessionScoped
 public class LoginBean implements Serializable{
@@ -46,14 +44,14 @@ public class LoginBean implements Serializable{
 		if (valid) {
 			HttpSession session = SessionUtils.getSession();
 			session.setAttribute("username", login);
-			return "private/welcome";
+			return "success";
 		} else {
 			FacesContext.getCurrentInstance().addMessage(
 					null,
 					new FacesMessage(FacesMessage.SEVERITY_WARN,
 							"Incorrect Username and Passowrd",
 							"Please enter correct username and Password"));
-			return "login";
+			return "failure";
 		}
 	}
 

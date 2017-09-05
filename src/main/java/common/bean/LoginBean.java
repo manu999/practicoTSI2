@@ -59,7 +59,7 @@ public class LoginBean implements Serializable{
 	public String logout() {
 		HttpSession session = SessionUtils.getSession();
 		session.invalidate();
-		return "login";
+		return "logout";
 	}
 }
 	

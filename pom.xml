@@ -3,30 +3,29 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>tsi2</groupId>
   <artifactId>practico</artifactId>
-  <packaging>war</packaging>
-  <version>0.0.1-SNAPSHOT</version>
-  <name>practico Maven Webapp</name>
-  <url>http://maven.apache.org</url>
+  <packaging>pom</packaging>
+  <version>0.0.1</version>
+  <name>practico</name>
+  <description></description>
   
-  <profiles>
-	<profile>
-		<id>practico</id>
-		<activation>
-			<activeByDefault>true</activeByDefault>
-			<property>
-				<name>env</name>
-				<value>practico-dev</value>
-			</property>
-		</activation>
-		<properties>
-			<!-- ${deployDir} se debe definir en la configuracion de build como un parametro en la pestaña MAIN donde tiene el path al jboss, por ejemplo /opt/jboss4.0.4 -->
-				<jboss.install.dir>${deployDir}</jboss.install.dir>
-				<web.target.dir>${basedir}/web/target</web.target.dir>
-				<ear.target.dir>${basedir}/target</ear.target.dir>
-				<web.application.name>practicoTsi2</web.application.name>
-		</properties>
-	</profile>
-  </profiles>
+<!--   <profiles> -->
+<!-- 	<profile> -->
+<!-- 		<id>practico</id> -->
+<!-- 		<activation> -->
+<!-- 			<activeByDefault>true</activeByDefault> -->
+<!-- 			<property> -->
+<!-- 				<name>env</name> -->
+<!-- 				<value>practico-dev</value> -->
+<!-- 			</property> --> 
+<!-- 		</activation> -->
+<!-- 		<properties> -->
+<!-- 				<jboss.install.dir>${deployDir}</jboss.install.dir> -->
+<!-- 				<web.target.dir>${basedir}/web/target</web.target.dir> -->
+<!-- 				<ear.target.dir>${basedir}/target</ear.target.dir> -->
+<!-- 				<web.application.name>practicoTsi2</web.application.name> -->
+<!-- 		</properties> -->
+<!-- 	</profile> -->
+<!--   </profiles> -->
   
   <dependencies>
     <!-- JUnit -->

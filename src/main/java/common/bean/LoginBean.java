@@ -46,7 +46,7 @@ public class LoginBean implements Serializable{
 		if (valid) {
 			HttpSession session = SessionUtils.getSession();
 			session.setAttribute("username", login);
-			return "welcome";
+			return "private/welcome";
 		} else {
 			FacesContext.getCurrentInstance().addMessage(
 					null,

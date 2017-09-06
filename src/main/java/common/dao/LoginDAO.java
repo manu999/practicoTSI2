@@ -37,7 +37,7 @@ public class LoginDAO {
 				
 			}else{
 				User u = userList.get(0);
-				if(!u.getPassword().equals(password)){
+				if(!u.getLogin().equals(user) || !u.getPassword().equals(password)){
 					ret = false;
 				}
 			}

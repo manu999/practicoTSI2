@@ -8,6 +8,8 @@ import javax.faces.bean.SessionScoped;
 import javax.faces.context.FacesContext;
 import javax.servlet.http.HttpSession;
 
+import common.dao.LoginDAO;
+
 @ManagedBean
 @SessionScoped
 public class LoginBean implements Serializable{
@@ -39,8 +41,8 @@ public class LoginBean implements Serializable{
 	
 	//validate login
 	public String validateUsernamePassword() {
-		boolean valid = "asd".equals(login) && "asd".equals(pass);
-//		boolean valid = LoginDAO.validate(login, pass);
+//		boolean valid = "asd".equals(login) && "asd".equals(pass);
+		boolean valid = LoginDAO.validate(login, pass);
 		if (valid) {
 			HttpSession session = SessionUtils.getSession();
 			session.setAttribute("username", login);

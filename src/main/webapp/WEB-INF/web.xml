@@ -20,7 +20,7 @@
 		<url-pattern>/templates/*</url-pattern>
 	</filter-mapping>
 	
-  	<!-- JSF mapping -->
+  	<!-- JSF mapping --> 
 	<servlet>
 		<servlet-name>Faces Servlet</servlet-name>
 		<servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
